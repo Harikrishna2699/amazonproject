@@ -1,0 +1,33 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Amazon Test Suite">
+    <test name="Package A Tests">
+        <classes>
+            <class name="packageA.Class1">
+            <methods>
+                <include name = "signIn"/>
+                <include name = "searchProduct"/>
+            </methods>
+            </class>
+            <class name="packageA.Class2">
+                    <methods>
+                        <include name ="windowHandling"/>
+                        <include name="AddToWishlist"/>
+                        <include name="AddToCart"/>
+                    </methods>
+            </class>
+            <class name="packageA.Class3">
+            <methods>
+                <include name ="VerifyCart"/>
+                <include name="delcart"/>
+                <include name="signout"/>
+            </methods>
+        </class>
+        </classes>
+    </test>
+    <test name="Package B Tests">
+        <classes>
+            <class name="PackageB.DriverInitializer"/>
+            <class name="PackageB.PageLocators"/>
+        </classes>
+    </test>
+</suite>
